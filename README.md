@@ -12,5 +12,5 @@ Steps:
 
 - The above steps create a temporary web server and open the web-browser.
 
-- Press Control+C in the terminal to stop the server.
+- Press ctrl+c in the terminal to stop the server.
 
