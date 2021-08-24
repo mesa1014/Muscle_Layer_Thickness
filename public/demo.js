@@ -1,19 +1,23 @@
 window.onload = function() {
   var progressBar = document.getElementById("progress");
+  var display = document.getElementById("display");
 
   function download(data) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/data/cm_5.json", true);
-    xhr.open("GET", "/data/lm_2.json", true);
+    // xhr.open("GET", "/data/lm_2.json", true);
     xhr.responseType = "text";
     xhr.onprogress = function(e) {
       if (e.lengthComputable) {
         progressBar.max = e.total;
         progressBar.value = e.loaded;
+        display.innerText = Math.floor((e.loaded / e.total) * 100) + '%';
+        // console.log(progressBar.max,progressBar.value);
       }
     };
     xhr.onloadstart = function(e) {
       progressBar.value = 0;
+      display.innerText = '0%';
     };
     xhr.onloadend = function(e) {
       progressBar.value = e.loaded;
