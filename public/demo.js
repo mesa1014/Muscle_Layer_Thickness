@@ -4,6 +4,7 @@ window.onload = function() {
   function download(data) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "/data/cm_5.json", true);
+    xhr.open("GET", "/data/lm_2.json", true);
     xhr.responseType = "text";
     xhr.onprogress = function(e) {
       if (e.lengthComputable) {
