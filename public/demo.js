@@ -1,4 +1,25 @@
 window.onload = function() {
+  var progressBar = document.getElementById("progress");
+
+  function download(data) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "/data/cm_5.json", true);
+    xhr.responseType = "text";
+    xhr.onprogress = function(e) {
+      if (e.lengthComputable) {
+        progressBar.max = e.total;
+        progressBar.value = e.loaded;
+      }
+    };
+    xhr.onloadstart = function(e) {
+      progressBar.value = 0;
+    };
+    xhr.onloadend = function(e) {
+      progressBar.value = e.loaded;
+    };
+    xhr.send(null);
+  }
+  download();
 
   // container = document.createElement( 'div' );
   var container = document.getElementById( 'LM' );
@@ -16,7 +37,7 @@ window.onload = function() {
   var scene = zincRenderer.createScene("stomach");
   scene.loadViewURL("./data/stomachjs_view.json");
   scene.loadMetadataURL("./data/lm_1.json");
-  console.log(scene.id);
+  // console.log(scene.id);
   // var geom2 = scene.getObjectById( 1001, true );
   // console.log(geom);
 
@@ -28,9 +49,9 @@ window.onload = function() {
   // scene.add( camera );
   zincRenderer.setCurrentScene(scene);
   zincRenderer.animate();
-  console.log(scene);
-  console.log(scene.camera.position);
-  console.log(zincRenderer);
+  // console.log(scene);
+  // console.log(scene.camera.position);
+  // console.log(zincRenderer);
   var geom = scene.getZincGeometryByID(1001);
 
   var zincRenderer2 = new Zinc.Renderer(container2, window);
@@ -45,6 +66,7 @@ window.onload = function() {
   // console.log(scene2);
 
 
+
   function viewAll()
   {
     zincRenderer.viewAll();
@@ -53,22 +75,11 @@ window.onload = function() {
 
   var gui = new dat.GUI( { autoPlace: false } );
   var obj = { add:function(){ viewAll(); }};
-   gui.add(obj,'add').name("Reset View");
+  gui.add(obj,'add').name("Reset View");
 
-  // var props = {view:false};
-  // gui.add( props, "view" ).name( "Reset View" ).onChange( function () {
-  //   viewAll();
-  // } );
-  // gui.add( props, "view" ).name( "Reset View CM" ).onChange( function () {
-  //   zincRenderer2.viewAll();
-  // } );
   // Put gui on top right
   var customContainer = document.getElementById('gui');
   customContainer.appendChild(gui.domElement);
-
-  // The following configures the gui for interacting with the X.volume
-
-
 
 
 
