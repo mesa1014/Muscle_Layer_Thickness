@@ -127,6 +127,12 @@ html,body
   position: absolute;
   /* margin-top: 100px; */
   top: 25px;
-  left: 53%;
+  left: 50%;
   z-index: 100;
+  display: inline-block;
+  width: 10em;
+  box-sizing: border-box;
+  float:left;
+  text-align: center;
+
 }

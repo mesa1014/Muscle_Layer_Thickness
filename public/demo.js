@@ -2,9 +2,9 @@ window.onload = function() {
   var progressBar = document.getElementById("progress");
   var display = document.getElementById("display");
 
-  function download(data) {
+  function download(dataPath) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/data/cm_5.json", true);
+    xhr.open("GET", dataPath, true);
     // xhr.open("GET", "/data/lm_2.json", true);
     xhr.responseType = "text";
     xhr.onprogress = function(e) {
@@ -26,7 +26,9 @@ window.onload = function() {
     };
     xhr.send(null);
   }
-  download();
+  download("/data/cm_5.json");
+  // download("/data/lm_2.json");
+
 
   // container = document.createElement( 'div' );
   var container = document.getElementById( 'LM' );
