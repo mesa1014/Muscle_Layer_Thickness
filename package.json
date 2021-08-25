@@ -4,7 +4,8 @@
   "description": "human stomach compressed",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "compression": "^1.7.4"
   },
   "devDependencies": {
     "compression": "^1.7.4"
