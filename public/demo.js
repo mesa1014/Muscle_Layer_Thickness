@@ -21,8 +21,8 @@ window.onload = function() {
     };
     xhr.onloadend = function(e) {
       progressBar.value = e.loaded;
-      progressBar.style.borderColor = "green";
-      progressBar.style.backgroundColor = "green";
+      // progressBar.style.borderColor = "green";
+      // progressBar.style.backgroundColor = "green";
     };
     xhr.send(null);
   }
