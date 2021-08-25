@@ -11,13 +11,13 @@ window.onload = function() {
       if (e.lengthComputable) {
         progressBar.max = e.total;
         progressBar.value = e.loaded;
-        display.innerText = Math.floor((e.loaded / e.total) * 100) + '%';
+        display.innerText = 'Loading: ' + Math.floor((e.loaded / e.total) * 100) + '%';
         // console.log(progressBar.max,progressBar.value);
       }
     };
     xhr.onloadstart = function(e) {
       progressBar.value = 0;
-      display.innerText = '0%';
+      display.innerText = 'Loading: 0%';
     };
     xhr.onloadend = function(e) {
       progressBar.value = e.loaded;
