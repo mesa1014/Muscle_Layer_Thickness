@@ -11,13 +11,13 @@ window.onload = function() {
       if (e.lengthComputable) {
         progressBar.max = e.total;
         progressBar.value = e.loaded;
-        display.innerText = 'Loading: ' + Math.floor((e.loaded / e.total) * 100) + '%';
+        // display.innerText = 'Loading: ' + Math.floor((e.loaded / e.total) * 100) + '%';
         // console.log(progressBar.max,progressBar.value);
       }
     };
     xhr.onloadstart = function(e) {
       progressBar.value = 0;
-      display.innerText = 'Loading: 0%';
+      // display.innerText = 'Loading: 0%';
     };
     xhr.onloadend = function(e) {
       progressBar.value = e.loaded;
@@ -28,7 +28,6 @@ window.onload = function() {
   }
   download("/data/cm_5.json");
   // download("/data/lm_2.json");
-
 
   // container = document.createElement( 'div' );
   var container = document.getElementById( 'LM' );
@@ -49,6 +48,9 @@ window.onload = function() {
   // console.log(scene.id);
   // var geom2 = scene.getObjectById( 1001, true );
   // console.log(geom);
+//   console.log(scene.getDownloadProgress());
+//   console.log(scene.progressMap);
+// console.log(scene.getThreeJSScene());
 
   // console.log(Zinc.Geometry.modelId);
   // Zinc.defaultOpacity = 0.1;
