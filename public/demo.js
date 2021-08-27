@@ -26,8 +26,8 @@ window.onload = function() {
     };
     xhr.send(null);
   }
-  download("/data/cm_5.json");
-  // download("/data/lm_2.json");
+  // download("/data/cm_5.json");
+  download("/data/lm_2.json");
 
   // container = document.createElement( 'div' );
   var container = document.getElementById( 'LM' );
