@@ -6,7 +6,7 @@ window.onload = function() {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", dataPath, true);
     // xhr.open("GET", "/data/lm_2.json", true);
-    xhr.responseType = "text";
+    xhr.responseType = "blob";
     xhr.onprogress = function(e) {
       if (e.lengthComputable) {
         progressBar.max = e.total;
@@ -27,7 +27,7 @@ window.onload = function() {
     xhr.send(null);
   }
   // download("/data/cm_5.json");
-  download("/data/lm_2.json");
+  download("/data/data.zip");
 
   // container = document.createElement( 'div' );
   var container = document.getElementById( 'LM' );
