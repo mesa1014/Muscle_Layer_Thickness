@@ -43,8 +43,8 @@ window.onload = function() {
   var zincRenderer = new Zinc.Renderer(container, window);
   zincRenderer.initialiseVisualisation();
   var scene = zincRenderer.createScene("stomach");
-  scene.loadViewURL("./data/stomachjs_view.json");
-  scene.loadMetadataURL("./data/lm_1.json");
+  scene.loadViewURL("./data/v2/stomachjs_view.json");
+  scene.loadMetadataURL("./data/v2/lm_1.json");
   // console.log(scene.id);
   // var geom2 = scene.getObjectById( 1001, true );
   // console.log(geom);
@@ -68,8 +68,8 @@ window.onload = function() {
   var zincRenderer2 = new Zinc.Renderer(container2, window);
   zincRenderer2.initialiseVisualisation();
   var scene2 = zincRenderer2.createScene("stomach2");
-  scene2.loadViewURL("./data/stomachjs_view.json");
-  scene2.loadMetadataURL("./data/cm_1.json");
+  scene2.loadViewURL("./data/v2/stomachjs_view.json");
+  scene2.loadMetadataURL("./data/v2/cm_1.json");
   // scene.setInteractiveControlEnable = true;
 
   zincRenderer2.setCurrentScene(scene2);
