@@ -61,6 +61,12 @@ window.onload = function() {
   zincRenderer.setCurrentScene(scene);
   zincRenderer.animate();
   // console.log(scene);
+  var scene_lm = scene.getThreeJSScene();
+  // console.log(scene2);
+  // console.log(scene.getZincCameraControls());
+  const directionalLight_lm = new THREE.DirectionalLight( 0xffffff, 0.6 );
+  scene_lm.add( directionalLight_lm );
+
   // console.log(scene.camera.position);
   // console.log(zincRenderer);
   var geom = scene.getZincGeometryByID(1001);
@@ -76,6 +82,9 @@ window.onload = function() {
   zincRenderer2.animate();
   // console.log(scene2);
 
+  var scene_cm = scene2.getThreeJSScene();
+  const directionalLight_cm = new THREE.DirectionalLight( 0xffffff, 0.6 );
+  scene_cm.add( directionalLight_cm );
 
 
   function viewAll()
