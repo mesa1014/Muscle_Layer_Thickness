@@ -1,12 +1,11 @@
 [
    {
-      "GlyphGeometriesURL" : "./data/cm_3.json",
       "GroupName" : "average_large_0_whole_cm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Glyph",
-      "URL" : "./data/cm_2.json"
+      "Type" : "Surfaces",
+      "URL" : "cm_2.json"
    },
    {
       "GroupName" : "average_large_0_whole_cm",
@@ -14,14 +13,15 @@
       "MorphNormals" : false,
       "MorphVertices" : false,
       "Type" : "Lines",
-      "URL" : "./data/cm_4.json"
+      "URL" : "cm_3.json"
    },
    {
+      "GlyphGeometriesURL" : "cm_5.json",
       "GroupName" : "average_large_0_whole_cm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Surfaces",
-      "URL" : "./data/cm_5.json"
+      "Type" : "Glyph",
+      "URL" : "cm_4.json"
    }
 ]

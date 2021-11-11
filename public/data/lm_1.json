@@ -1,20 +1,12 @@
 [
    {
-      "GroupName" : "average_large_0_whole_lm",
-      "MorphColours" : false,
-      "MorphNormals" : false,
-      "MorphVertices" : false,
-      "Type" : "Surfaces",
-      "URL" : "./data/lm_2.json"
-   },
-   {
-      "GlyphGeometriesURL" : "./data/lm_4.json",
+      "GlyphGeometriesURL" : "lm_3.json",
       "GroupName" : "average_large_0_whole_lm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
       "Type" : "Glyph",
-      "URL" : "./data/lm_3.json"
+      "URL" : "lm_2.json"
    },
    {
       "GroupName" : "average_large_0_whole_lm",
@@ -22,6 +14,14 @@
       "MorphNormals" : false,
       "MorphVertices" : false,
       "Type" : "Lines",
-      "URL" : "./data/lm_5.json"
+      "URL" : "lm_4.json"
+   },
+   {
+      "GroupName" : "average_large_0_whole_lm",
+      "MorphColours" : false,
+      "MorphNormals" : false,
+      "MorphVertices" : false,
+      "Type" : "Surfaces",
+      "URL" : "lm_5.json"
    }
 ]
