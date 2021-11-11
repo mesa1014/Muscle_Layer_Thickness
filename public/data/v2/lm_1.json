@@ -1,10 +1,11 @@
 [
    {
+      "GlyphGeometriesURL" : "./data/v2/lm_3.json",
       "GroupName" : "average_large_0_whole_lm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Lines",
+      "Type" : "Glyph",
       "URL" : "./data/v2/lm_2.json"
    },
    {
@@ -12,16 +13,15 @@
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Surfaces",
-      "URL" : "./data/v2/lm_3.json"
+      "Type" : "Lines",
+      "URL" : "./data/v2/lm_4.json"
    },
    {
-      "GlyphGeometriesURL" : "./data/v2/lm_5.json",
       "GroupName" : "average_large_0_whole_lm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Glyph",
-      "URL" : "./data/v2/lm_4.json"
+      "Type" : "Surfaces",
+      "URL" : "./data/v2/lm_5.json"
    }
 ]
