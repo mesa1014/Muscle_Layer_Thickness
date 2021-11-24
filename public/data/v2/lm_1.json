@@ -1,10 +1,10 @@
 [
    {
-      "GroupName" : "average_large_0_whole_lm",
+      "GroupName" : "lm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Lines",
+      "Type" : "Surfaces",
       "URL" : "./data/v2/lm_2.json"
    },
    {
@@ -17,11 +17,11 @@
       "URL" : "./data/v2/lm_3.json"
    },
    {
-      "GroupName" : "average_large_0_whole_lm",
+      "GroupName" : "lm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Surfaces",
+      "Type" : "Lines",
       "URL" : "./data/v2/lm_5.json"
    }
 ]

@@ -1,10 +1,10 @@
 [
    {
-      "GroupName" : "average_large_0_whole_cm",
+      "GroupName" : "cm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Surfaces",
+      "Type" : "Lines",
       "URL" : "./data/v2/cm_2.json"
    },
    {
@@ -17,11 +17,11 @@
       "URL" : "./data/v2/cm_3.json"
    },
    {
-      "GroupName" : "average_large_0_whole_cm",
+      "GroupName" : "cm",
       "MorphColours" : false,
       "MorphNormals" : false,
       "MorphVertices" : false,
-      "Type" : "Lines",
+      "Type" : "Surfaces",
       "URL" : "./data/v2/cm_5.json"
    }
 ]
