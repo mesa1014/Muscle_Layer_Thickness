@@ -8,7 +8,7 @@ Steps:
 
 - Navigate into the folder.
 
-- Type python3 server.py and run.
+- Type node server.js and run.
 
 - The above steps create a temporary web server and open the web-browser.
 
